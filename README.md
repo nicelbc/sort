@@ -1,2 +1,2 @@
 # sort
-C++
+language:  C++
