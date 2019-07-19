@@ -1,14 +1,12 @@
-void bubble(int score[]){
-for(int i =0;i < score.length - 1;i++)
+void bubble(vector<int> &arr){
+for(int i =0;i < arr.size();i++)
         {
-            for(int j = 0;j <  score.length - 1-i;j++)// j开始等于0，
+            for(int j = 0;j < arr.size() - i - 1;j++)// j开始等于0，
             {
-                if(score[j] < score[j+1])
+                if(arr[j] > arr[j + 1])
                 {
-                    int temp = score[j];
-                    score[j] = score[j+1];
-                    score[j+1] = temp;
-                }
+                	swap(arr[j], arr[j + 1]);    
+		}
             }
         }
-        }
+}
